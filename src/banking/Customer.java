@@ -1,9 +1,14 @@
 package banking;
 
+import java.util.HashSet;
+import java.util.Set;
+
 public class Customer {
     private String firstName = "";
     private String lastName = "";
-    private Account account;
+    Set<String> acct = new HashSet<>();
+   // private Account acct;
+
 
     public Customer(String f, String l){
         firstName = f;
@@ -18,12 +23,19 @@ public class Customer {
         return lastName;
     }
 
-    public Account getAccount(){
-        return account;
+    public int getAccount(){
+        for(int i = 0; i < acct.size(); i++){
+            System.out.println(i);
+        }
+        return 0;
     }
 
-    public void setAccount(Account acct){
-        account = acct;
+    public void addAccount(String Account){
+        acct.add(Account);
+    }
+
+    public int getNumOfAccounts(){
+        return acct.size();
     }
 
 }

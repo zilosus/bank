@@ -13,7 +13,13 @@ public class TestBanking {
         System.out.println(klient.getFirstName());
         System.out.println(klient.getLastName());
         System.out.println(klient.getAccount());
-        klient.setAccount(konto);
+
         System.out.println(klient.getAccount());
+
+        Bank cust = new Bank();
+        cust.addCustomer("Jan", "Kowalski");
+        cust.getCustomer();
+
+        System.out.println(cust.getNumberOfCustomers());
     }
 }
