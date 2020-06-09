@@ -2,9 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba988f71-0c6d-4b79-ad72-990e86c22dcd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/banking/Bank.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/banking/CheckingAccount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/banking/CustomerReport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/banking/OverdraftException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/banking/SavingsAccount.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bank/banking/TestBanking.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bank/banking/TestBanking.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/bank/banking/Account.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bank/banking/Account.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/bank/banking/Customer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/bank/banking/TestBanking.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/banking/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/banking/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/banking/Bank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/banking/Bank.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/banking/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/banking/Customer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/banking/TestBanking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/banking/TestBanking.java" afterDir="false" />
     </list>
@@ -76,32 +83,70 @@
       <option name="presentableId" value="Default" />
       <updated>1586366122426</updated>
     </task>
+    <task id="LOCAL-00001" summary="Lab05&#10;do zweryfikowania">
+      <created>1587812455604</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1587812455604</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Lab05&#10;do zweryfikowania" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lab05&#10;do zweryfikowania" />
+  </component>
   <component name="WindowStateProjectService">
-    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1587812371507">
+    <state x="614" y="119" key="CommitChangelistDialog2" timestamp="1587812454899">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.bottom/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1587812371507" />
-    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1587812371507">
+    <state x="614" y="119" key="CommitChangelistDialog2/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1587812454899" />
+    <state x="759" y="110" width="1066" height="850" key="DiffContextDialog" timestamp="1591726478031">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.center/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1587812371507" />
-    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1587812371507">
+    <state x="759" y="110" width="1066" height="850" key="DiffContextDialog/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1591726478031" />
+    <state x="739" y="266" key="FileChooserDialogImpl" timestamp="1589561165512">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.left/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1587812371507" />
-    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1587812371507">
+    <state x="739" y="266" key="FileChooserDialogImpl/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1589561165512" />
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1588180001601">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.right/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1587812371507" />
-    <state x="656" y="349" key="com.intellij.ide.util.TipDialog" timestamp="1587804543200">
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1588153928823" />
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1588180001601" />
+    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1588180001601">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="656" y="349" key="com.intellij.ide.util.TipDialog/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1587804543200" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1586367218558">
+    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1588153928823" />
+    <state width="1877" height="285" key="GridCell.Tab.0.center/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1588180001601" />
+    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1588180001601">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
+    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1588153928823" />
+    <state width="1877" height="285" key="GridCell.Tab.0.left/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1588180001601" />
+    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1588180001601">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1588153928823" />
+    <state width="1877" height="285" key="GridCell.Tab.0.right/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1588180001601" />
+    <state x="656" y="349" key="com.intellij.ide.util.TipDialog" timestamp="1591725608862">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="656" y="349" key="com.intellij.ide.util.TipDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1588150575816" />
+    <state x="656" y="349" key="com.intellij.ide.util.TipDialog/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1591725608862" />
+    <state x="342" y="145" key="new project wizard" timestamp="1589561168213">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="342" y="145" key="new project wizard/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1589561168213" />
+    <state x="998" y="163" key="refactoring.ChangeSignatureDialog" timestamp="1591726955971">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="998" y="163" key="refactoring.ChangeSignatureDialog/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1591726955971" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1588152835082">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1588152835082" />
     <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1586367218558" />
   </component>
 </project>

@@ -1,29 +1,38 @@
 package banking;
-import java.util.Set;
-import java.util.HashSet;
+import java.util.List;
+import java.util.ArrayList;
+import java.util.Iterator;
 
 public class Bank {
 
-    Set<String> customers = new HashSet<>();
 
-    public Bank(){
-        customers.add("Jan1 Kowalski1");
-        customers.add("Jan1 Kowalski2");
-        customers.add("Jan1 Kowalski3");
-        customers.add("Jan1 Kowalski4");
-        customers.add("Jan1 Kowalski5");
+    private static final Bank bankInstance = new Bank();
+    public static Bank getBank(){
+        return bankInstance;
+    }
+    private static final double SAVINGS_RATE = 3.5;
+
+    private List customers = new ArrayList();
+
+
+    private Bank(){
+
     }
 
     public void addCustomer(String f, String l){
-       customers.add(f+" "+l);
+        customers.add(new Customer(f, l));
     }
 
-    public void getCustomer(){
-        System.out.println(customers);
+    public Customer getCustomer(int customer_index) {
+        return (Customer) customers.get(customer_index);
     }
 
     public int getNumberOfCustomers(){
         return customers.size();
+    }
+
+    public Iterator getCustomers() {
+        return customers.iterator();
     }
 
 }

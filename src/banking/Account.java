@@ -1,7 +1,7 @@
 package banking;
 
 public class Account {
-    private double balance = 0;
+    protected double balance = 0;
 
     public Account(double init_balance){
         balance = init_balance;
@@ -21,13 +21,12 @@ public class Account {
         }
     }
 
-    public boolean withdraw(double amt){
+    public void withdraw(double amt) throws OverdraftException {
         if (amt <= balance){
             balance -= amt;
-            return true;
         }
         else{
-            return false;
+            throw new OverdraftException("Insufficient funds", amt - balance);
         }
     }
 }

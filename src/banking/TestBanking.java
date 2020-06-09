@@ -3,23 +3,32 @@ package banking;
 
 public class TestBanking {
     public static void main(String[] args) {
-        Account konto = new Account(500);
-        System.out.println(konto.getBalance());
-        System.out.println(konto.deposit(200));
-        System.out.println(konto.getBalance());
-        System.out.println(konto.withdraw(100));
-        System.out.println(konto.getBalance());
-        Customer klient = new Customer("Jan", "Kowalski");
-        System.out.println(klient.getFirstName());
-        System.out.println(klient.getLastName());
-        System.out.println(klient.getAccount());
+        Bank bank = Bank.getBank();
+        Customer customer;
+        CustomerReport report = new CustomerReport();
 
-        System.out.println(klient.getAccount());
+        bank.addCustomer("Jane", "Simms");
+        customer = bank.getCustomer(0);
+        customer.addAccount(new SavingsAccount(500.00, 0.05));
+        customer.addAccount(new CheckingAccount(200.00, 400.00));
 
-        Bank cust = new Bank();
-        cust.addCustomer("Jan", "Kowalski");
-        cust.getCustomer();
+        bank.addCustomer("Owen", "Bryant");
+        customer = bank.getCustomer(1);
+        customer.addAccount(new CheckingAccount(200.00));
 
-        System.out.println(cust.getNumberOfCustomers());
+        bank.addCustomer("Tim", "Soley");
+        customer = bank.getCustomer(2);
+        customer.addAccount(new SavingsAccount(1500.00, 0.05));
+        customer.addAccount(new CheckingAccount(200.00));
+
+        bank.addCustomer("Maria", "Soley");
+        customer = bank.getCustomer(3);
+        // Maria and Tim have a shared checking account
+        customer.addAccount(bank.getCustomer(2).getAccount(1));
+        customer.addAccount(new SavingsAccount(150.00, 0.05));
+
+        // Generate a report
+        report.generateReport();
+
     }
 }
